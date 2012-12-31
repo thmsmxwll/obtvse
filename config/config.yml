@@ -1,11 +1,11 @@
 ---
-title:               Obtvse Demo
-tagline:             Clever tagline.
+title:               Thomas Maxwell
+tagline:             "20 something digital native. When I'm not dreaming, coding or managing projects I'm playing tennis and consuming copious amounts of music."
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
-name:                Your name
-twitter:             your_twitter_handle
-github:              your_github_handle
-email:               address@example.com
-google_analytics_id: YOUR_GA_ID
-disqus_shortname:    <%= ENV.fetch("disqus_shortname") { "" } %>
+name:                Thomas Maxwell
+twitter:             thmsmxwll
+github:              thmsmxwll
+email:               thmsmxwll@gmail.com
+google_analytics_id: UA-17659949-3
+disqus_shortname:    <%= ENV.fetch("disqus_shortname") { "thmsmxwll" } %>
