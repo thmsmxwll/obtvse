@@ -1,6 +1,6 @@
 ---
 title:               Thomas Maxwell
-tagline:             "20 something digital native. When I'm not studying, coding or managing projects I'm playing tennis, reading and consuming copious amounts of music."
+tagline:             "Digital native. When I'm not studying, coding or managing projects I'm playing tennis, reading and consuming copious amounts of music."
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Thomas Maxwell
