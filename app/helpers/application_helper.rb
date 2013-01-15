@@ -17,6 +17,9 @@ module ApplicationHelper
     match = match_youtube line
     return render(:partial => 'youtube', :locals => { :video => match[1] }) if match
 
+    # match = match_soundcloud line
+    # return render(:partial => 'soundcloud', :locals => { :video => match[1] }) if match
+
     line
   end
 
@@ -27,5 +30,9 @@ module ApplicationHelper
   def match_youtube(line)
     line.match(/^http.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/)
   end
+
+  # def match_soundcloud(line)
+  #   line.match()
+  # end
 
 end
