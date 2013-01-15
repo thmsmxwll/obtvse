@@ -24,7 +24,7 @@
         <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
       <% end %>
       <% if CONFIG['email'] %>
-        <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
+        <li><%= mail_to CONFIG['email'], 'say hi', :encode =>'hex', :subject => 'How about we discuss it over a coffee?' %></li>
       <% end %>
       <li><%= link_to 'rss feed', '/posts.rss' %></li>
     </ul>
@@ -47,6 +47,16 @@
   </div>
 
   <%= javascript_include_tag 'application' %>
+
+  <% if CONFIG['soundcloud_id'] %>
+    <!-- soundcloud -->
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script>
+      SC.initialize({
+        client_id: '<%= CONFIG['soundcloud_id'] %>',
+      });
+    </script>
+  <% end %>
 
   <% if CONFIG['google_analytics_id'] %>
     <!-- Google Analytics -->
