@@ -1,6 +1,6 @@
 ---
 title:               Thomas Maxwell
-tagline:             "Digital native collaborating with Troop. When I'm not studying, coding or managing projects I'm playing tennis, reading and consuming copious amounts of music."
+tagline:             "Currently collaborating with Troop. When I'm not studying, coding or managing projects I'm playing tennis, reading and consuming copious amounts of music."
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Thomas Maxwell
